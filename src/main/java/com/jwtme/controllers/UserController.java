@@ -1,5 +1,7 @@
 package com.jwtme.controllers;
 
+import com.jwtme.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 public class UserController {
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping("/users")
     @ResponseBody

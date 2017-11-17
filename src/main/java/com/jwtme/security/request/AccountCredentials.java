@@ -1,4 +1,4 @@
-package com.jwtme.security;
+package com.jwtme.security.request;
 
 public class AccountCredentials {
 	
